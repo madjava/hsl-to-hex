@@ -1,9 +1,10 @@
 {
-  "name": "hsl-to-hex",
+  "name": "@madjava/hsl-to-hex",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --cov test",
+    "lint": "standard"
   },
   "keywords": [],
   "author": "Felix E. Eyetan",
@@ -16,5 +17,15 @@
     "url": "https://github.com/madjava/hsl-to-hex/issues"
   },
   "homepage": "https://github.com/madjava/hsl-to-hex#readme",
-  "description": ""
+  "description": "Convert HSL colors to RGB colors in hex format.",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^14.2.0",
+    "tap": "^14.6.2"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
